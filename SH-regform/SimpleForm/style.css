@@ -1,0 +1,133 @@
+/* Style the form container */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #3ead34;
+  padding: 0 10px;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 30px auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #05660d;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Style the form labels */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+/* Style the form inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+  background-color: #0e7427;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the required fields with red border */
+form input[required],
+form select[required] {
+  border-color: #316dbd;
+}
+
+/* Style the error messages */
+form input:invalid,
+form select:invalid {
+  border-color: #3170c4;
+}
+
+form input:invalid:focus,
+form select:invalid:focus {
+  outline: none;
+}
+
+form input:invalid + span,
+form select:invalid + span {
+  color: #3ac6df;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Style the success message */
+form .success-message {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Here's a breakdown of the CSS styles applied:
+
+The form container is styled with a maximum width of 400px, centered on the page with auto margins, and with padding, border, and border-radius.
+The form labels are styled with a display block, margin-bottom, and font-weight.
+The form inputs are styled with width, padding, border, border-radius, margin-bottom, and font-size.
+The form submit button is styled with a background color, color, padding, border, border-radius, cursor, and font-size.
+The form required fields are styled with a red border.
+The form invalid fields (such as email) are styled with a red border and a red error message.
+The form success message is styled with a color, font-weight, and margin-top.
+To use this CSS with the HTML form, you can save the CSS code into a separate file with the extension .css, and then link to it in the HTML file using a link tag in the head section:
+
+*/
+
+/* New CSS styles */
+/* Style the submit button on hover */
+form input[type="submit"]:hover {
+  background-color: #2edd1e;
+}
+
+/* Style the form inputs on hover */
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="tel"]:hover,
+form select:hover,
+form input[type="password"]:hover {
+  border-color: #999;
+}
+
+/*Here's a breakdown of the CSS styles applied:
+
+The form submit button is styled with a hover effect on the background color.
+The form input fields (text, email, tel, select, and password) are styled with a hover effect on the border color.
+To use this CSS with the HTML form, you can include it in the same form-style.css file that you linked to in the previous example. Just add the new CSS code below the existing styles:*/
+
+/* ... */
